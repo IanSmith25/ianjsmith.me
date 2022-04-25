@@ -31,7 +31,7 @@ Filename: reservations.html
 			<a href="home.html">Home</a>
 			<a href="rooms.html">Rooms</a>
 			<a href="amenities.html">Amenities</a>
-			<a href="reservations.html">Reservations</a>
+			<a href="reservations.php">Reservations</a>
 			<a href="home.html#areaattractions">Area Attractions</a>
 		</nav>
 		

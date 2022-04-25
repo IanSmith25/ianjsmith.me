@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--
+		JavaScript 6th Edition
+		Chapter 2
+		Hands-on Project 2-3
+
+		Author: Ian Smith
+		Date: 10/27/21   
+
+		Filename: shapes.html
+	-->
+	<meta charset="utf-8">
+	<title>Hands-on Project 2-3</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<section>
+		<header>
+			<h1>Hands-on Project 2-3</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Project 2-1</a></li>
+				<li><a href="convert.html">Project 2-2</a></li>
+				<li><a href="shapes.html">Project 2-3</a></li>
+				<li><a href="order.html">Project 2-4</a></li>
+			</ul>
+		</nav>
+		<article>
+			<h2>Pick A Shape</h2>	
+			<div class="myShapes">					
+				<div id="square">
+					&nbsp;
+				</div>
+				
+				<div id="heart">
+					&nbsp;
+				</div>
+				
+				<br class="clear">
+				
+				<div id="circle">
+					&nbsp;
+				</div>	
+				
+				<div id="parallelogram">
+					&nbsp;
+				</div>
+				
+				<br class="clear">
+			</div>
+		</article>
+		<footer>
+		&copy; 2021 Web Page Development
+		</footer>
+	</section> 
+	<script>
+		let square = document.getElementById("square");
+		let heart = document.getElementById("heart");
+		let circle = document.getElementById("circle");
+		let parallel = document.getElementById("parallelogram");
+		square.addEventListener("click", 
+		function () {
+			shapes(this.id);
+		}
+		);
+		heart.addEventListener("click", 
+		function () {
+			shapes(this.id);
+		}
+		);
+		circle.addEventListener("click", 
+		function () {
+			shapes(this.id);
+		}
+		);
+		parallel.addEventListener("click", 
+		function () {
+			shapes(this.id);
+		}
+		);
+	</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<!--
+Web Page Development Assinment 5
+Amenities Page
+
+Authors: Ian Smith
+Date: 11/11/21
+
+Filename: amenities.html
+-->
+	<head>
+		<meta charset = "UTF-8" />
+		<title>Smith: Assignment 5</title>
+		<link href="smith_styles.css" rel="stylesheet" />
+		<script src="smithI_script.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<figure>
+				<img src="smith_logo.png" alt="Wild Waterpark World" />
+				<hr>
+				<figcaption>Where the World comes to get Wet!</figcaption>
+			</figure>
+		</header>
+		
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="rooms.html">Rooms</a>
+			<a href="amenities.html">Amenities</a>
+			<a href="reservations.html">Reservations</a>
+			<a href="index.html#areaattractions">Area Attractions</a>
+		</nav>
+		
+		<main id ="amenities">
+			<h2>Hotel Amenities</h2>
+			
+			<table id="amenitiesTable">
+			<caption>*Prices, Times, and Locations of events are subject to change</caption>
+				<tr> <!-- 1st Row Dont Change, Change all other rows-->
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr> <!-- 2nd Row -->
+					<th></th>
+					<td></td>
+					<td></td>
+					<td rowspan="2"></td>
+				</tr>
+				<tr> <!-- 3rd Row -->
+					<th></th>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr> <!-- 4th Row -->
+					<th></th>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr> <!-- 5th Row -->
+					<th></th>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr> <!-- 6th Row -->
+					<th></th>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr> <!-- 7th Row -->
+					<th></th>
+					<td colspan="2"></td>
+					<td></td>
+				</tr>
+			</table>
+		</main>
+		
+		<footer>
+			Copyright &copy; 
+			<script>
+				let d = new Date();
+				let t = d.toLocaleTimeString();
+				let day = d.toLocaleDateString();
+				document.write(day +" "+ t);
+			</script>
+			- <a href="mailto:is02939@gerogiasouthern.edu">Ian Smith</a>
+		</footer>
+		<script>
+			window.addEventListener("load", amenities, false);
+		</script>
+	</body>
+
+
+</html>

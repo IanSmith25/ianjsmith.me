@@ -1,0 +1,428 @@
+@charset "utf-8";
+@font-face {
+	font-family: CaptureIt2;
+	src: url('fonts/Capture_it_2.ttf') format('truetype');
+}
+@font-face {
+	font-family: CaptureIt;
+	src: url('fonts/Capture_it.ttf') format('truetype');
+}
+/*
+Web Page Development Assinment 2
+Stylesheet for index.html, reservations.html, rooms.html, and amenities.html
+
+Authors: Ian Smith
+Date: 11/11/21
+
+Filename: smith_styles.css
+*/
+
+
+/* Html Styles */
+html {
+	background-color: rgb(87, 183, 233, 0.4);
+}
+
+/* Body Styles */
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1100px;
+	background-color: white; /*temp color */
+	font-family: "Trebuchet MS", Verdana, sans-serif; /*Temp Font */
+	padding: 0;
+}
+
+body {
+	background-image: url(watersplash.png);
+	background-size: 1200px 300px;
+	background-repeat: no-repeat;
+	box-shadow: 5px 5px 5px orange, -5px 5px 5px orange;
+	border-radius: 20px;
+}
+
+/* Header Styles */
+header {
+	padding: 10px;
+	border-radius: 0 0 25px 25px;
+}
+
+/* Nav Styles */
+nav a {
+	text-decoration: none;
+}
+nav a{
+	background-color: orange;	
+	display: block;
+	float: left;
+	text-align: center;
+	width: 15%;
+	font-family: CaptureIt, Verdana, sans-serif;
+	margin-bottom: 10px;
+	margin-right: 40px;
+	vertical-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	border: 2px solid black;
+}
+
+nav a:first-of-type {
+	margin-left: 45px;
+}
+
+nav {
+	padding-left: 0;
+	margin-top: 90px;
+	border-bottom: 10px groove orange;
+	border-radius: 0 0 25px 25px;
+	/*border-top: 10px ridge orange;*/
+	background-image: linear-gradient(rgb(90, 186, 233), rgb(255, 170, 0));
+	margin-bottom: -60px;
+}
+
+nav a:link, nav a:visited {
+	color: white;
+}
+
+nav a:hover, nav a:active {
+	background-color: rgb(51, 51, 45);
+}
+
+nav a {
+	border-radius: 35px 10px;
+}
+nav::after {
+	clear: left;
+	content: "";
+	display: block;
+}
+
+/* Figure Styles */
+figure {
+	margin: auto;
+	width: 90%;
+}
+
+figure img {
+	margin: auto;
+	width: 100%;
+	padding: 0;
+}
+
+main#rooms figure img {
+	margin: auto;
+	width: 100%;
+	border: 5px outset orange;
+	border-radius: 50px;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main#rooms figure:first-of-type img, main#rooms figure:nth-of-type(6) img {
+	padding:15px;
+}
+
+figcaption {
+	text-align: center;
+	font-size: 1.7em;
+	font-family: CaptureIt, Verdana, sans-serif;
+}
+
+main#rooms figure {
+	float: left;
+	box-sizing: border-box;
+	width: 23%;
+	height: 23%;
+	margin: 50px 50px auto 5px;
+	padding-left: 25px;
+	
+}
+/* Main Styles */
+main#index {
+	padding-top: 90px;
+}
+
+main#index h2 {
+	padding-left: 25px;
+	vertical-align: baseline;
+	border-bottom: 5px groove orange;
+	border-radius: 0 0 25px 25px;
+	font-family: CaptureIt, Verdana, sans-serif;
+	font-weight: normal;
+	font-size: 2em;
+	background-image: linear-gradient(white, rgb(87, 183, 233));
+	border-width: 10px;
+}
+
+main#index p {
+	padding-left: 25px;
+	padding-bottom: 5px;
+	width: 90%;
+	color: rgb(50, 50, 50);
+}
+
+#upcomingevents {
+	list-style-image: url(splashdot.png);
+	padding-left: 70px;
+}
+
+#upcomingevents li {
+	padding-bottom: 10px;
+}
+
+#areaParagraph ol {
+	padding-left: 10px;
+	list-style-type: decimal;
+} 
+
+#areaParagraph li {
+	padding-bottom: 10px;
+	list-style-type: decimal;
+	margin-left: 25px;
+}
+
+#areaParagraph li a {
+	color: rgb(255, 50, 50);
+}
+
+#rooms {
+	margin-top: 130px;
+}
+
+br {
+	clear: both;
+}
+#rooms h3, #rooms p, #rooms ul {
+	margin-left: 30px;
+}
+
+#rooms h2 {
+	padding-left: 25px;
+	vertical-align: baseline;
+	border-bottom: 5px groove orange;
+	border-radius: 0 0 25px 25px;
+	font-family: CaptureIt, Verdana, sans-serif;
+	font-weight: normal;
+	font-size: 2em;
+	background-image: linear-gradient(white, rgb(87, 183, 233));
+	border-width: 10px;
+}
+
+#rooms h3 {
+	font-family: "Courier New", Georgia, monospace;
+	font-size: 1.5em;
+	margin-bottom: 10px;
+	text-decoration: underline;
+}
+
+#rooms p {
+	width: 90%;
+	font-family: Garamond, Georgia, serif;
+	font-weight: bold;
+	font-size: 1em;
+	margin: auto auto 15px 65px;
+}
+
+#rooms ul {
+	margin-left: 100px;
+	margin-top: -30px;
+	list-style-image: url(splashdot.png);
+	width: initial;
+	display: inline-block;
+}
+
+#rooms ul li {
+	font-family: Verdana, Helvetica, sans-serif;
+	padding-bottom: 5px;
+	font-size: .99em;
+}
+
+#amenities h2 {
+	padding-left: 25px;
+	vertical-align: baseline;
+	border-bottom: 5px groove orange;
+	border-radius: 0 0 25px 25px;
+	font-family: CaptureIt, Verdana, sans-serif;
+	font-weight: normal;
+	font-size: 2em;
+	background-image: linear-gradient(white, rgb(87, 183, 233));
+	border-width: 10px;
+	margin-top: 100px;
+}
+
+#reservations h2 {
+	padding-left: 25px;
+	vertical-align: baseline;
+	border-bottom: 5px groove orange;
+	border-radius: 0 0 25px 25px;
+	font-family: CaptureIt, Verdana, sans-serif;
+	font-weight: normal;
+	font-size: 2em;
+	background-image: linear-gradient(white, rgb(87, 183, 233));
+	border-width: 10px;
+	margin-top: 100px;
+}
+
+/* Table Styles */
+#amenitiesTable {
+
+	width: 90%;
+	margin: auto;
+	margin: 50px auto 50px auto;
+	border-collapse: collapse;
+	border-spacing: 10px;
+	border: 10px solid orange;
+
+}
+
+#amenitiesTable td, #amenitiesTable th {
+	font-size: 1.2em;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 2em;
+	color: black;
+	padding: 5px;
+}
+
+#amenitiesTable tr:first-of-type th:first-of-type {
+	border-radius: 10px 0 0 0;
+}
+
+#amenitiesTable tr:first-of-type th:last-of-type {
+	border-right: 10px solid orange;
+}
+
+#amenitiesTable tr:nth-of-type(odd) {
+	background-color: rgb(87, 183, 233, 0.75);
+	color: rgb(28, 28, 28);
+}
+
+#amenitiesTable tr:nth-of-type(even) {
+	background-color: rgb(87, 183, 233);
+	color: rgb(28, 28, 28);
+}
+
+#amenitiesTable tr:first-of-type th {
+	font-family: CaptureIt, Verdana, sans-serif;
+	letter-spacing: 2px;
+	background-color: rgb(0, 0, 128, 0.8);
+	color: white;
+	border-bottom: 8px groove orange;
+	border-right: hidden;
+}
+	
+#amenitiesTable caption {
+	caption-side: bottom;
+	text-align: left;
+	padding-top: 15px;
+	color: red;
+}
+#amenitiesTable colspan {
+	background-color: rgb(87, 183, 233);
+}
+/* Footer Styles */
+footer {
+	padding-top: 15px;
+	padding-bottom: 10px;
+	background-color: orange;
+	margin: auto;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 1em;
+	font-family: CaptureIt, Verdana, sans-serif;
+}
+
+footer a {
+	color: rgb(35, 130, 255);
+}
+
+/* Reservation Page Styles */
+
+form {
+	width: 80%;
+	margin: auto;
+	padding: 5px;
+	background-color: rgb(87, 183, 233);
+	border: 5px outset orange;
+	border-radius: 10px;
+}
+
+fieldset {
+	border: 4px solid orange;
+	margin: 15px;
+	padding: 1px;
+	background: linear-gradient(white, rgb(87, 183, 233));
+	border-radius: 10px;
+}
+
+legend {
+	background-color: orange;
+	color: black;
+	font-size: 1.1em;
+	border-radius: 10px;
+	padding: 8px;
+	margin-bottom: 10px;
+	font-family: CaptureIt, Verdana, sans-serif;
+	letter-spacing: 1px;
+	margin-left: 10px;
+}
+
+fieldset#cusInfo label, fieldset#roomInfo label {
+	display: inline-block;
+	margin-bottom: 10px;
+	padding-left: 15px;
+	width: 45%
+}
+
+input, select, textarea {
+	box-sizing: border-box;
+	width: 50%;
+	padding: 0;
+	margin: auto;
+}
+
+
+fieldset#roomAdd label {
+	display: inline-block;
+	width: 40%;
+	margin: 3px;
+	padding: 1px;
+
+}
+
+fieldset#roomAdd input {
+	width: auto;
+	box-sizing: border-box;
+	margin: auto auto auto 40px;
+	padding: 1px;
+}
+
+
+input#numGuest {
+	width: 46%;
+}
+
+input[type="submit"] {
+	background-color: orange;
+	border: 5px outset rgb(240, 140, 0);
+	color: black;
+	font-family: CaptureIt, Verdana, sans-serif;	
+	letter-spacing: 1px;
+	font-size: 1.6em;
+	display: block;
+	margin: 15px auto;
+	width: auto;
+}
+
+fieldset#roomAdd p {
+	margin-left: 10px;
+	text-decoration: underline;
+	font-size: 1.05em;
+	font-weight: bold;
+}
+
+
+
+
+

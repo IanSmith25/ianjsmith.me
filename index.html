@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<!--
+Web Page Development Assinment 5
+Home Page
+
+Authors: Ian Smith
+Date: 11/11/21
+
+Filename: index.html
+-->
+	<head>
+		<meta charset = "UTF-8" />
+		<title>Smith: Assignment 5</title>
+		<link href="smith_styles.css" rel="stylesheet" />
+		<script src="smithI_script.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<figure>
+				<img src="smith_logo.png" alt="Wild Waterpark World" />
+				<hr>
+				<figcaption>Where the World comes to get Wet!</figcaption>
+			</figure>
+		</header>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="rooms.html">Rooms</a>
+			<a href="amenities.html">Amenities</a>
+			<a href="reservations.html">Reservations</a>
+			<a href="#areaattractions">Area Attractions</a>
+		</nav>
+		
+		<main id="index">
+			<h2>ABOUT THE HOTEL</h2>
+			<p>At our world famous Hotel &amp; Resort we pride ourselves on giving everyone the best experience possible for you and you're family. At a place where you can just wake up in your comfortable queen beds and go right into a fun day of water activities. And if you'd like sometime away from the 
+			the kids then you can drop them off at our kids program, after this you can go to the exclusive adult pool and bar where you can relax and enjoy yourselves free of your children. Or if you'd like to spend time with your kids you can go to our indoor waterpark or outdoor waterpark.</p>
+			<p>Our resort is located in Tybee Island in the great state of Georgia. This is only a 30 minute drive from Savannah and a 50 minute drive from pooler. Now if you're coming from a bit more north in Atlanta it is about a 4 hour drive, but I would say well worth it to spend a weekend or a week down 
+			here with us at WWW. Tybee Island also has lots of amenities that you can visit while you are here, you can go to the beach or its many popular seafood restaraunts. Or you could walk through the city and get some classic food like salt water taffy. And if you get bored of that then you can come 
+			back to your nice clean hotel and relax in you're room or go to the pool and relax with some drinks and food.</p>
+			<p>WWW started out as a wild idea thrown out and then Griffin Brohm, Ian Smith, and Cameron Mathews decided they were going to persue this fantastic idea. These three have all know each other since college and met in there Web Page Development class. They started with the design back in 2016 
+			and started building in 2018. Becuase this is such a new building everthing is practically state of the art and in excellent condition. Since then the owners have been continuously looking to better the experience for our guests for years to come. So recently in 2020 they unveiled the 
+			Star Wars Water Ride, that had a grand opening summer of 2022 and will be our biggest and most exciting ride yet.</p>
+			
+			<h2>Upcoming/Special Events</h2>
+			<ul id="upcomingevents">
+				<li>Kids are free during spring break with the purchase of 2 adult tickets.</li> <!-- Three upcoming events at the hotel just make up -->
+				<li>Happy Hour at the Bar on Saturdays</li>
+				<li>A Free Water Aerobics Class</li>
+			</ul>
+			
+			<h2 id="areaattractions">Area Attractions</h2>
+			<p id= "areaParagraph">&nbsp;</p>
+			<script>
+				favEvents();
+			</script>
+		</main>
+		
+		<footer>
+			Copyright &copy; 
+			<script>
+				let d = new Date();
+				let t = d.toLocaleTimeString();
+				let day = d.toLocaleDateString();
+				document.write(day +" "+ t);
+			</script>
+			- <a href="mailto:is02939@gerogiasouthern.edu">Ian Smith</a>
+		</footer>
+	</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<!--
+Web Page Development Assinment 5
+Reservations Page
+
+Authors: Ian Smith
+Date: 11/11/21
+
+Filename: reservations.html
+-->
+
+	<head>
+		<meta charset = "UTF-8" />
+		<title>Smith: Assignment 5</title>
+		<link href="smith_styles.css" rel="stylesheet" />
+		<script src="smithI_script.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<figure>
+				<img src="smith_logo.png" alt="Wild Waterpark World" />
+				<hr>
+				<figcaption>Where the World comes to get Wet!</figcaption>
+			</figure>
+		</header>
+		
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="rooms.html">Rooms</a>
+			<a href="amenities.html">Amenities</a>
+			<a href="reservations.html">Reservations</a>
+			<a href="index.html#areaattractions">Area Attractions</a>
+		</nav>
+		
+		<main id = "reservations">
+			<h2>Reserve a Room</h2>
+			
+			<form method="get" action="formProcessor.html">
+				<fieldset id="cusInfo">
+					<legend>Contact Information</legend>
+					
+
+					<label for="custName">Name:</label>
+					<input type="text" id="custName" name="CustomerName" placeholder="First and Last">
+					
+					<label for="custEmail">Email:</label>
+					<input type="email" id="custEmail" name="CustomerEmail" placeholder="example@example.com">
+					
+					<label for="custPhone">Phone Number:</label>
+					<input type="tel" id="custPhone" name="CustomerPhone" placeholder="111-111-1111">
+					
+					<label for="custAddress">Address:</label>
+					<textarea id="custAddress" name="CustomerAddress"></textarea>
+					
+					<label for="custAge">Age:</label>
+					<input type="number" id="custAge" name="CustomerAge" min="18" max="100" value="21">
+				</fieldset>
+				
+				<fieldset id="roomInfo">
+					<legend>Room Information</legend>
+					
+					<label for="resStartDate">Reservation Start Date</label>
+					<input type="date" id="resStartDate" name="ReservationStartDate">
+					
+					<label for="resEndDate">Reservation End Date</label>
+					<input type="date" id="resEndDate" name="reservationenddate">
+					
+					<label for="roomType">Room Type</label>
+					<select id="roomType" name="roomType"> 
+						<option value="blank">&nbsp;</option>
+						<option value="piratesbay">Pirate's Bay Suite</option>
+						<option value="lightside">Light Side Suite</option>
+						<option value="premium">Premium Stay</option>
+						<option value="premier">Premier Stay</option>
+						<option value="preferred">Preferred Stay</option>
+						<option value="prime">Prime Stay</option>
+						<option value="value">Value Stay</option>
+					</select>
+					
+					<label for="numGuest">Number of Guests</label>
+					1
+					<input type="range" id="numGuest" name="guests" min="1" max="7" value="4">
+					7
+				</fieldset>
+				
+				<fieldset id="roomAdd">
+					<legend>Room Addons</legend>
+					
+					<p>Special Room Packages:</p>
+					<input type="radio" id="supersoaker" name="Package" value="Super Soaker Package">
+					<label for="supersoaker">Super Soaker Package</label>
+				
+					<input type="radio" id="family" name="Package" value="Family Package">
+					<label for="family">Family Package</label>
+					<br>
+					<input type="radio" id="student" name="Package" value="Student Package">
+					<label for="student">Student Package</label>
+					
+					<input type="radio" id="timeoflife" name="Package" value="Time of your Life Package">
+					<label for="timeoflife">Time of your Life Package</label>
+					
+					<p>Room Requests:</p>
+					<input type="checkbox" id="pullbed" name="Addon" value="Pullout Bed">
+					<label for="pullbed">Pullout Bed</label>
+					
+					<input type="checkbox" id="minifridge" name="Addon" value="Fully Stocked Mini Fridge">
+					<label for="minifridge">Fully Stocked Mini Fridge</label>
+					
+					<input type="checkbox" id="candy" name="Addon" value="Fully Stocked Candy Bar">
+					<label for="candy">Fully Stocked Candy Bar</label>
+					
+					<input type="checkbox" id="roomserv" name="Addon" value="Room Service">
+					<label for="roomserv">Room Service</label>
+					
+					<input type="checkbox" id="extrasup" name="Addon" value="Extra Hotel Provided Supplys">
+					<label for="extrasup">Extra Hotel Provided Supplys</label>
+					
+					<input type="checkbox" id="champagne" name="Addon" value="Champagne Basket">
+					<label for="champagne">Champagne Basket</label>
+					
+				</fieldset>
+				<input type="submit" value="Reserve Room">
+			</form>
+		</main>
+		
+		<footer>
+			Copyright &copy; 
+			<script>
+				let d = new Date();
+				let t = d.toLocaleTimeString();
+				let day = d.toLocaleDateString();
+				document.write(day +" "+ t);
+			</script>
+			- <a href="mailto:is02939@gerogiasouthern.edu">Ian Smith</a>
+		</footer>
+		<script>
+			document.getElementsByTagName("form")[0].addEventListener("submit", reservations);
+		</script>
+	</body>
+
+</html>

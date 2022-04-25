@@ -38,7 +38,7 @@ Filename: reservations.html
 		<main id = "reservations">
 			<h2>Reserve a Room</h2>
 			
-			<form method="post" action="https://formsubmit.co/is02939@georgiasouthern.edu">
+			<form method="post" action="reservationform.php">
 				<fieldset id="cusInfo">
 					<legend>Contact Information</legend>
 					
